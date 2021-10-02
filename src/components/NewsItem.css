@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  height: 25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.card-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card-text {
+  padding-bottom: 10px;
+}
+.card-author {
+  padding-bottom: 5px;
+}
+.card-date {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.card:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1.02);
+}
+a {
+  text-decoration: none;
+  color: rgba(21, 24, 26, 0.493);
+}
+.badge {
+  background: rgb(219, 16, 16);
+  color: aliceblue;
+  width: fit-content;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.badge p {
+  padding: 5px 10px;
+}

@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": { "id": "nrk", "name": "NRK" },
+      "author": "NRK",
+      "title": "De siste sportsnyhetene fra NRK",
+      "description": "Her får du de siste sportsnyhetene fra NRK.",
+      "url": "https://www.nrk.no/sport/sportsnyheter-1.14660227#1.15667417.1.15667417",
+      "urlToImage": "https://gfx.nrk.no/7kT5zGoE2E-GnUKLojH1PQ0I1Nze4Ypu8lxM-oBjubQw.jpg",
+      "publishedAt": "2021-09-27T08:52:27.7463708Z",
+      "content": "26. september2021kl.15:38Lewis Hamilton nådde en enorm milepæl i formel 1-sirkuset søndag. Da tok Mercedes-føreren sin seier nummer 100.\r\nHerlig innsats, jeg er så takknemlig for de hundre, sa Hamilt… [+1269 chars]"
+    },
+    {
+      "source": { "id": "bleacher-report", "name": "Bleacher Report" },
+      "author": "Brent Sobleski",
+      "title": "Packers' Davante Adams Shows Why He's NFL's Best WR in Heroic SNF Win",
+      "description": "What truly makes anyone the best at anything in professional sports? The standard can be defined when everyone in the stadium or arena knows the individual will get the ball and he or she still delivers...",
+      "url": "https://bleacherreport.com/articles/2948774-packers-davante-adams-shows-why-hes-nfls-best-wr-in-heroic-snf-win",
+      "urlToImage": "https://img.bleacherreport.net/img/images/photos/003/917/728/hi-res-274aa04a29f6bd529fa8bf952e5a239e_crop_exact.jpg?w=1200&h=1200&q=75",
+      "publishedAt": "2021-09-27T04:56:38Z",
+      "content": "Ezra Shaw/Getty Images\r\nWhat truly makes anyone the best at anything in professional sports? The standard can be defined when everyone in the stadium or arena knows the individual will get the ball a… [+5139 chars]"
+    },
+    {
+      "source": { "id": "breitbart-news", "name": "Breitbart News" },
+      "author": "Warner Todd Huston",
+      "title": "NBA Fearing Coalition of Unvaxed Players Led by Kyrie Irving",
+      "description": "The NBA is hoping to vax everyone in the league, but officials are also coming to fear a coalition of unvaccinated players. | Sports",
+      "url": "https://www.breitbart.com/sports/2021/09/26/report-nba-plagued-by-vaccine-civil-war-as-unvaccinated-players-rally-behind-kyrie-irving/",
+      "urlToImage": "https://media.breitbart.com/media/2019/10/Getty-Images_Adam-Glanzman-640x335.jpg",
+      "publishedAt": "2021-09-27T01:32:16Z",
+      "content": "The NBA is hoping to vax everyone in the league, but officials are also coming to fear a coalition of unvaccinated players, including Kyrie Irving, who is refusing the vaccine, according to Rolling S… [+2501 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-times",
+        "name": "The Washington Times"
+      },
+      "author": "The Washington Times http://www.washingtontimes.com",
+      "title": "Latest Quizzes",
+      "description": "Take a break from the hard news of the day and enjoy a quiz on entertainment, sports, history and politics only from The Washington Times.",
+      "url": "https://www.washingtontimes.com/quiz/",
+      "urlToImage": null,
+      "publishedAt": "2021-02-10T03:52:37.2719772Z",
+      "content": "Featured Quizzes\r\nAttention all William Shakespeare experts. Pinpoint the prose's origin plucked from one of his many famous plays in this multiple-choice challenge.\r\n Shares \r\nName these legendary c… [+32652 chars]"
+    }
+  ]
+}

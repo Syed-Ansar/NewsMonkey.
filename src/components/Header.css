@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(8, 48, 83);
+}
+.logo {
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
+li a {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 2rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+li a:hover,
+a:active {
+  border-bottom: 2px dotted aliceblue;
+}
+.form {
+  margin-left: 3rem;
+}
+input {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(57, 129, 192);
+  width: 250px;
+  height: 2rem;
+  color: aliceblue;
+}
+input[type="text"] {
+  font-size: 16px;
+  font-weight: 700;
+}
+input:focus {
+  outline: none;
+}
+input:focus::placeholder {
+  color: transparent;
+  background-image: none;
+}
+::placeholder {
+  background-image: url("https://img.icons8.com/ios/18/000000/search.png");
+  background-repeat: no-repeat;
+  background-position: 1vh;
+  color: aliceblue;
+  font-size: 15px;
+  padding-left: 2rem;
+}

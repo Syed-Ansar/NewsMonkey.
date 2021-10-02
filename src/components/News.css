@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.news-header {
+  padding: 2rem;
+  text-align: center;
+}
+.news-width {
+  width: 100%;
+}
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
