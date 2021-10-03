@@ -10,6 +10,7 @@
   height: 5rem;
   background-color: rgb(8, 48, 83);
 }
+
 .logo {
   color: aliceblue;
   font-size: 30px;
@@ -23,14 +24,18 @@ li {
   list-style-type: none;
 }
 li a {
+  padding-bottom: 5px;
   font-weight: 700;
   font-size: 18px;
   margin-left: 2rem;
   color: aliceblue;
   text-decoration: none;
+  margin-bottom: 10px;
 }
-li a:hover,
-a:active {
+li a:hover {
+  border-bottom: 2px dotted aliceblue;
+}
+li a:focus {
   border-bottom: 2px dotted aliceblue;
 }
 .form {
@@ -62,4 +67,14 @@ input:focus::placeholder {
   color: aliceblue;
   font-size: 15px;
   padding-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: 20rem;
+  }
+  ul {
+    flex-direction: column;
+  }
 }

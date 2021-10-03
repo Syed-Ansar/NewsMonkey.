@@ -1,33 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <div className="header">
-      <div className="logo">NewsMonkey.</div>
-      <ul className="vertical">
-        <li>
-          <a href="/">General</a>
-        </li>
-        <li>
-          <a href="/">Entertainment</a>
-        </li>
-        <li>
-          <a href="/">Business</a>
-        </li>
-        <li>
-          <a href="/">Health</a>
-        </li>
-        <li>
-          <a href="/">Science</a>
-        </li>
-        <li>
-          <a href="/">Sports</a>
-        </li>
-        <li>
-          <a href="/">Technology</a>
-        </li>
-      </ul>
+      <a style={{ border: "none" }} className="logo" href="/">
+        NewsMonkey.
+      </a>
+      <header>
+        <div>
+          <ul className="vertical">
+            <li>
+              <Link to="/">General</Link>
+            </li>
+            <li>
+              <Link to="/entertainment">Entertainment</Link>
+            </li>
+            <li>
+              <Link to="/business">Business</Link>
+            </li>
+            <li>
+              <Link to="/health">Health</Link>
+            </li>
+            <li>
+              <Link to="/science">Science</Link>
+            </li>
+            <li>
+              <Link to="/sports">Sports</Link>
+            </li>
+            <li>
+              <Link to="/technology">Technology</Link>
+            </li>
+          </ul>
+        </div>
+      </header>
       <div className="form">
         <input type="text" placeholder="Search" />
       </div>

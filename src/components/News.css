@@ -9,8 +9,9 @@
 .news-width {
   width: 100%;
 }
+
 .row {
   display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
 }

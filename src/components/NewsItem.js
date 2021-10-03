@@ -23,7 +23,9 @@ function NewsItem({
   return (
     <div>
       <div className="card">
-        <img src={img} alt="" height="150" />
+        <a href={newsUrl} target="_blank">
+          <img src={img} alt="" height="150" width="100%" />
+        </a>
         <div className="card-body">
           <h4 className="card-title">{title}...</h4>
           <p className="card-text">
