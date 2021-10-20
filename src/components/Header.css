@@ -3,12 +3,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .header {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 5rem;
   background-color: rgb(8, 48, 83);
+  display: flex;
+  align-items: center;
+}
+.mobile-header {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: rgb(8, 48, 83);
+  font-weight: bold;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 100;
+}
+.mobile-logo {
+  margin-left: 1.3rem;
+}
+.hamburger {
+  margin-right: 1.3rem;
+  min-width: 5px;
 }
 
 .logo {
@@ -39,7 +63,10 @@ li a:focus {
   border-bottom: 2px dotted aliceblue;
 }
 .form {
-  margin-left: 3rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 input {
   border-radius: 5px;
@@ -49,32 +76,166 @@ input {
   height: 2rem;
   color: aliceblue;
 }
-input[type="text"] {
+input[type='text'] {
+  padding-left: 15px;
   font-size: 16px;
   font-weight: 700;
 }
 input:focus {
-  outline: none;
+  outline-width: 1.75px;
+  outline-style: solid;
+  outline-color: rgb(245, 245, 245);
+  padding-left: 10px;
 }
 input:focus::placeholder {
   color: transparent;
   background-image: none;
 }
 ::placeholder {
-  background-image: url("https://img.icons8.com/ios/18/000000/search.png");
-  background-repeat: no-repeat;
-  background-position: 1vh;
   color: aliceblue;
   font-size: 15px;
-  padding-left: 2rem;
+  padding-left: 5px;
+}
+.search_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 1.5rem;
+  background-color: rgb(57, 129, 192);
+  border: none;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+}
+.search_button:active,
+.search_button:hover {
+  outline: #fff solid 1px;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
+@media only screen and (max-width: 767px) {
+  .headeractive {
+    background-color: rgb(8, 48, 83);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
     flex-direction: column;
-    height: 20rem;
+    position: fixed;
+    top: 5rem;
+    transition: 5s;
   }
+  .header {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    /* text-align: center; */
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    transition: 850ms;
+  }
+  .nav-desktop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logo {
+    display: none;
+  }
+
   ul {
     flex-direction: column;
+  }
+  .form {
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+  }
+  input[type='text'] {
+    width: 200px;
+  }
+  li {
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+  }
+  li a {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 1rem;
+  }
+  .search_button {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .mobile-header {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header {
+    flex-direction: row;
+    height: 5rem;
+  }
+  input[type='text'] {
+    font-size: 15px;
+    width: 90px;
+    height: 25px;
+    padding: 2px;
+  }
+  li a {
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 0.6rem;
+  }
+  .logo {
+    font-size: 27px;
+    margin-left: 10px;
+  }
+  .form {
+    margin-left: 0.7rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  input[type='text'] {
+    width: 120px;
+  }
+  li a {
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 0.6rem;
+  }
+  .form {
+    margin-left: 0.7rem;
+  }
+  .logo {
+    font-size: 30px;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  input[type='text'] {
+    width: 200px;
+  }
+  li a {
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 2rem;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .form {
+    margin-left: 4rem;
   }
 }

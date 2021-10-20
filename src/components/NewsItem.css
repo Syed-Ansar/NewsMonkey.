@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -44,4 +48,14 @@ a {
 }
 .badge p {
   padding: 5px 10px;
+}
+@media only screen and (max-width: 320px) {
+  .card {
+    max-width: 18rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    max-width: 19rem;
+  }
 }
